@@ -16,10 +16,12 @@ import java.sql.SQLException;
  * @version 0.1
  */
 
+//Esta es una aplicación que interactua con una base de datos mediante JDBC
+//También interactua con el usuario mediante una interfaz echa en SWING
 public class main {    
-    
+        
     public static void main(String[] args){
+        //Llamada a la capa de presentación
         Presentacion_cliente cliente = new Presentacion_cliente();        
-        //Presentacion_tarjeta tarjeta = new Presentacion_tarjeta();
     }    
 }

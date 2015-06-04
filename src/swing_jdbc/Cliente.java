@@ -7,6 +7,7 @@ package swing_jdbc;
  * 
  */
 
+//Clase del molde para los clientes con sus beans y su método toString
 public class Cliente{
     
     private String nombre, ap_paterno, ap_materno, rfc, email, direccion;

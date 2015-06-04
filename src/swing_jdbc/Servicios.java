@@ -6,6 +6,7 @@ package swing_jdbc;
  * @version 0.1
  */
 
+//Interfaz que define los métodos necesarios para implementar la capa de sericio de la aplicación
 public interface Servicios {
             
     /**

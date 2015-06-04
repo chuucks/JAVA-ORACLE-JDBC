@@ -19,8 +19,10 @@ import javax.swing.JTextArea;
  * @version 0.1
  */
 
+//Esta clase implementa la capa de presentación para la interfaz de registro de cliente
 public class Presentacion_cliente extends JFrame implements ActionListener{        
     
+    //Se declaran los elementos de Java SWING para la interfaz de usuario
     private Container contenedor;
     
         private JPanel panel_titulo;
@@ -49,7 +51,8 @@ public class Presentacion_cliente extends JFrame implements ActionListener{
     private JPanel panel_botones;
                 
         private JButton boton_comfirmar;   
-        
+    
+    //En el método constructor se definen los parametros de la ventana como el titulo, el tamaño, etc
     public Presentacion_cliente(){
         super("Seguros para autos");
         setResizable(false);
@@ -65,6 +68,8 @@ public class Presentacion_cliente extends JFrame implements ActionListener{
         setDefaultCloseOperation(3);
     } 
     
+    //En este método se agregan los elementos de la interfaz gráfica a la ventana, 
+    //definiendo el layout con el que se van a presentar
     private void añadirComponentes(){
         //Titulo
         panel_titulo = new JPanel();
@@ -122,7 +127,8 @@ public class Presentacion_cliente extends JFrame implements ActionListener{
         this.add(contenedor, "North");
         this.add(panel_botones, "South");
     }
-
+    
+    //En este método se definen las acciones a realizar cuando se oprime el botón
     @Override
     public void actionPerformed(ActionEvent e) {
         String nombre = texto_nombre.getText();

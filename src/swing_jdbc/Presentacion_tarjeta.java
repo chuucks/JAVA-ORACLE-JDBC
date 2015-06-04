@@ -20,8 +20,10 @@ import javax.swing.JTextArea;
  * @version 0.1
  */
 
+//Esta clase implementa la capa de presentación para la interfaz del registro de la tarjeta
 public class Presentacion_tarjeta extends JFrame implements ActionListener{        
     
+    //Se declaran los elementos de Java SWING para la interfaz de usuario
     private Container contenedor;
     
         private JPanel panel_titulo;
@@ -43,7 +45,8 @@ public class Presentacion_tarjeta extends JFrame implements ActionListener{
     private JPanel panel_botones;
                 
         private JButton boton_comfirmar;   
-        
+    
+    //En el método constructor se definen los parametros de la ventana como el titulo, el tamaño, etc
     public Presentacion_tarjeta(){
         super("Seguros para autos");
         setResizable(false);
@@ -59,6 +62,8 @@ public class Presentacion_tarjeta extends JFrame implements ActionListener{
         setDefaultCloseOperation(3);
     } 
     
+    //En este método se agregan los elementos de la interfaz gráfica a la ventana, 
+    //definiendo el layout con el que se van a presentar
     private void añadirComponentes(){                
 
         //Titulo
@@ -107,7 +112,8 @@ public class Presentacion_tarjeta extends JFrame implements ActionListener{
         this.add(contenedor, "North");
         this.add(panel_botones, "South");
     }
-
+    
+    //En este método se definen las acciones a realizar cuando se oprime el botón
     @Override
     public void actionPerformed(ActionEvent e){
         String tarjeta = texto_numero_tarjeta.getText();
@@ -119,7 +125,7 @@ public class Presentacion_tarjeta extends JFrame implements ActionListener{
             Servicio servicio = new Servicio();
             servicio.registraTarjeta(new Tarjeta(tarjeta, mes, año, seguridad));
             JOptionPane.showMessageDialog(this, "Cliente y terjeta correctamente registrados");
-            this.dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));            
+            this.dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
         }else
             JOptionPane.showMessageDialog(this, "Ingrese todos los campos");
     }

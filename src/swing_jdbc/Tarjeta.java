@@ -6,6 +6,7 @@ package swing_jdbc;
  * @version 0.1
  */
 
+//Clase del molde para los clientes con sus beans y su método toString
 public class Tarjeta{
         
     String numero_tarjeta, mes_expiracion, año_expiracion, numero_seguridad;
