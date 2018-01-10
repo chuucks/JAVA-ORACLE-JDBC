@@ -1,2 +1,3 @@
-# JDBC-project-to-access-an-Oracle-data-base
-JDBC Java project to acces an Oracle 11g data base and select, insert and update data
+# Desktop app to CRUD a Oracle database
+JDBC and Swing Java project to access an Oracle 11g data base for CRUD opperations with leyer architecutre.
+This was a Collegge (non professional) project.
